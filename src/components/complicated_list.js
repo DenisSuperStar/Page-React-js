@@ -54,24 +54,24 @@ class ListComplicated extends React.Component {
         })
         return (
             <div>
-                <div class="list-complicated-container">
-                    <div class="part-list-container">
+                <div className="list-complicated-container">
+                    <div className="part-list-container">
                         <ItemTitle header="Отдаете" />
-                        <ul class="column-list">
+                        <ul className="column-list">
                             {RENDER_SEND_ITEMS}
                         </ul>
                     </div>
 
-                    <div class="part-list-container">
+                    <div className="part-list-container">
                         <ItemTitle header="Получаете" />
-                        <ul class="column-list">
+                        <ul className="column-list">
                             {RENDER_ACCEPT_ITEMS}
                         </ul>
                     </div>
 
-                    <div class="part-list-container">
+                    <div className="part-list-container">
                         <ItemTitle header="Доступный резерв" />
-                        <ul class="column-list">
+                        <ul className="column-list">
                             {RENDER_PRICE}
                         </ul>
                     </div>

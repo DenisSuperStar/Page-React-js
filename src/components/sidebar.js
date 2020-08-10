@@ -18,28 +18,28 @@ class Sidebar extends React.Component {
     }
     render () {
         const RENDER_CREDITED = this.state.credited.map(item => {
-            return <WrapperContent text={item.text} prompt={item.help} />
+            return <WrapperContent text={item.text} prompt={item.help} key={item.id} />
         })
         const RENDER_REQUISITIES = this.state.requisites.map(item => {
-            return <WrapperContent text={item.text} prompt={item.prompt} />
+            return <WrapperContent text={item.text} prompt={item.prompt} key={item.id} />
         })
         return (
             <div>
-                <div class="sidebar">
-                    <h2 class="sidebar__title">Сумма обмена</h2>
-                    <form class="form-crediting">
+                <div className="sidebar">
+                    <h2 className="sidebar__title">Сумма обмена</h2>
+                    <form className="form-crediting">
                         {RENDER_CREDITED}
                     </form>
 
-                    <h2 class="wrapper-content__requisites">Реквизиты</h2>
-                    <form class="form-requisites">
+                    <h2 className="wrapper-content__requisites">Реквизиты</h2>
+                    <form className="form-requisites">
                         {RENDER_REQUISITIES}
-                        <label class="checkbox-container">
-                            <span class="checkbox-container__text">Я согласен c <a href="#" class="checkbox-container__link">условиями и правилами сервиса</a></span>
+                        <label className="checkbox-container">
+                            <span className="checkbox-container__text">Я согласен c <a href="#" className="checkbox-container__link">условиями и правилами сервиса</a></span>
                             <input type="checkbox-container__checkbox" />
-                            <span class="checkbox-container__checkmark"></span>
+                            <span className="checkbox-container__checkmark"></span>
                         </label>
-                        <button type="submit" class="btn-exchange">Обменять</button>
+                        <button type="submit" className="btn-exchange">Обменять</button>
                     </form>
                 </div>
             </div>

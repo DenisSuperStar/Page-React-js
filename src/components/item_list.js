@@ -3,7 +3,7 @@ import React from 'react'
 class ItemList extends React.Component {
     render() {
         return (
-            <li class="column-list__item">{this.props.name}</li>
+            <li className="column-list__item">{this.props.name}</li>
         )
     }
 }
