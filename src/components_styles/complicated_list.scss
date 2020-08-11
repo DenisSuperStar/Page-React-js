@@ -1,22 +1,25 @@
 .list-complicated-container {
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22); /*Для тени задать модификатор по БЕМ*/
+    margin-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    
+}
+
+.list-complicated-container .column-list {
+    width: 228px;
 }
 
 .list-complicated-container {
     .first-part-list {
-        padding-left: 60px;
+        padding-left: 40px;
     }
 }
 
 .list-complicated-container {
     .second-part-list {
-        padding-left: 30px;
-    }
-}
-
-.list-complicated-container {
-    .third-part-list {
-        padding-left: 15px;
+        padding-left: 20px;
     }
 }

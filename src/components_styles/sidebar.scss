@@ -1,9 +1,13 @@
+.sidebar {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22); /*Для тени задать модификатор по БЭМ*/
+    padding: 20px;
+}
+
 .form-requisites {
     .checkbox-container {
         cursor: pointer;
         display: block;
         position: relative;
-        /*margin-left: 35px;*/
         margin-top: 12px;
         margin-bottom: 12px;
     }
@@ -77,6 +81,6 @@
 
 .form-requisites {
     .btn-exchange {
-        border-radius: 0 !important;
+        border-radius: 0;
     }
 }
