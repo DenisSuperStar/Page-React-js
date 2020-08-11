@@ -1,4 +1,5 @@
 import React from 'react'
+import '../components_styles/wrapper-content.css'
 
 class WrapperContet extends React.Component {
     render() {
@@ -6,8 +7,8 @@ class WrapperContet extends React.Component {
             <div>
                 <div className="wrapper-content">
                     <label className="wrapper-content__input-title">{this.props.text}</label>
-                    <div className="form-control">
-                        <input type="text" className="form-control__input" placeholder={this.props.prompt} disabled />
+                    <div className="control input-group">
+                        <input type="text" className="control__input form-control" placeholder={this.props.prompt} disabled />
                     </div>
                 </div>
             </div>

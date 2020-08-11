@@ -1,7 +1,8 @@
-import React from 'react'
-import ItemList from '../components/item_list.js'
-import ItemTitle from '../components/list_title.js'
-import '../components_styles/complicated_list.css'
+import React from 'react';
+import ItemList from '../components/item_list.js';
+import ItemTitle from '../components/list_title.js';
+import '../components_styles/complicated_list.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class ListComplicated extends React.Component {
     constructor() {
@@ -58,21 +59,21 @@ class ListComplicated extends React.Component {
                 <div className="list-complicated-container">
                     <div className="part-list-container first-part-list">
                         <ItemTitle header="Отдаете" />
-                        <ul className="column-list">
+                        <ul className="column-list list-group">
                             {RENDER_SEND_ITEMS}
                         </ul>
                     </div>
 
                     <div className="part-list-container second-part-list">
                         <ItemTitle header="Получаете" />
-                        <ul className="column-list">
+                        <ul className="column-list list-group">
                             {RENDER_ACCEPT_ITEMS}
                         </ul>
                     </div>
 
                     <div className="part-list-container third-part-list">
                         <ItemTitle header="Доступный резерв" />
-                        <ul className="column-list">
+                        <ul className="column-list list-group">
                             {RENDER_PRICE}
                         </ul>
                     </div>

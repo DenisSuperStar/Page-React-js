@@ -1,5 +1,7 @@
 import React from 'react'
 import WrapperContent from './wrapper-content.js'
+import '../components_styles/sidebar.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Sidebar extends React.Component {
     constructor() {
@@ -36,10 +38,10 @@ class Sidebar extends React.Component {
                         {RENDER_REQUISITIES}
                         <label className="checkbox-container">
                             <span className="checkbox-container__text">Я согласен c <a href="#" className="checkbox-container__link">условиями и правилами сервиса</a></span>
-                            <input type="checkbox-container__checkbox" />
+                            <input type="checkbox" className="checkbox-container__checkbox" />
                             <span className="checkbox-container__checkmark"></span>
                         </label>
-                        <button type="submit" className="btn-exchange">Обменять</button>
+                        <button type="submit" className="btn btn-lg btn-exchange">Обменять</button>
                     </form>
                 </div>
             </div>
