@@ -2,12 +2,12 @@
     display: flex;
 }
 
-.navbar-left {
+.navbar-container .navbar-left {
     display: flex;
     align-items: center;
 }
 
-.menu-left {
+.navbar-container .navbar-left .menu-left {
     display: flex;
     list-style-type: none;
 }

@@ -1,0 +1,7 @@
+.wrapper-content .control {
+    width: 35% !important;
+}
+
+.wrapper-content .control .control__input {
+    height: 45px;
+}
