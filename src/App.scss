@@ -1,0 +1,19 @@
+.app-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  
+  .main {
+    display: flex;
+    flex: 1;
+  }
+  
+  .main > .main__general-content {
+    flex: 1;
+  }
+  
+  .main > .main__sidebar-content {
+    flex: 0 0 20%;
+  }
