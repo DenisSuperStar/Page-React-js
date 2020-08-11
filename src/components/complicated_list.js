@@ -33,7 +33,7 @@ class ListComplicated extends React.Component {
             ],
             price: [
                 {id: 0, price: '185 955.00'},
-                {id: 1, price: ''},
+                {id: 1, price: '0'},
                 {id: 2, price: '145 898.00'},
                 {id: 3, price: '139 911.00'},
                 {id: 4, price: '128 490.00'},

@@ -7,7 +7,7 @@ class WrapperContet extends React.Component {
             <div>
                 <div className="wrapper-content">
                     <label className="wrapper-content__input-title">{this.props.text}</label>
-                    <div className="control input-group">
+                    <div className="input-group control">
                         <input type="text" className="control__input form-control" placeholder={this.props.prompt} disabled />
                     </div>
                 </div>
