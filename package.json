@@ -31,5 +31,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "node-sass": "^4.14.1"
   }
 }
