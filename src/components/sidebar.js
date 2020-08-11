@@ -1,6 +1,6 @@
 import React from 'react'
 import WrapperContent from './wrapper-content.js'
-import '../components_styles/sidebar.css'
+import '../components_styles/sidebar.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Sidebar extends React.Component {

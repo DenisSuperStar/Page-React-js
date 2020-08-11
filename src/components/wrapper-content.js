@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components_styles/wrapper-content.css'
+import '../components_styles/wrapper-content.scss'
 
 class WrapperContet extends React.Component {
     render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuLeft from './menu_item_left.js';
 import NavbarRight from './navbar-right.js';
-import '../components_styles/menu.css';
+import '../components_styles/menu.scss'
 
 class Menu extends React.Component {
     constructor() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components_styles/navbar-right.css'
+import '../components_styles/navbar_right.scss'
 
 class NavbarRight extends React.Component {
     constructor() {

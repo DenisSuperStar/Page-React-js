@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components_styles/menu_item_left.css'
+import '../components_styles/menu_item_left.scss'
 
 class MenuItemLeft extends React.Component {
     render() {

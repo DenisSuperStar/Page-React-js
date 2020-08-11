@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemList from '../components/item_list.js';
 import ItemTitle from '../components/list_title.js';
-import '../components_styles/complicated_list.css';
+import '../components_styles/complicated_list.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class ListComplicated extends React.Component {
