@@ -9,11 +9,12 @@
     }
 }
 
+.navbar-container .menu-left {
+    display: flex;
+}
+
 .navbar-container {
-    .navbar-left {
-        .menu-left {
-            display: flex;
-            list-style-type: none;
-        }
+    .menu-left_remove_list-styles {
+        list-style-type: none;
     }
 }

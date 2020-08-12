@@ -14,6 +14,12 @@
 .menu-right__list {
     .menu-right__link {
         text-decoration: none;
+        
+    }
+}
+
+.menu-right__list {
+    .menu-right_inner-distance {
         padding: 12px; /*Пересчитать!*/
     }
 }

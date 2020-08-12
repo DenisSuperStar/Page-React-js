@@ -1,15 +1,33 @@
+@import '../common_styles/pallete_list_complicated.scss';
+
 .list-complicated-container {
     display: flex;
-    flex-wrap: wrap;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22); /*Для тени задать модификатор по БЕМ*/
-    margin-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 7px;
-    
+    flex-wrap: wrap;    
 }
 
-.list-complicated-container .column-list {
-    width: 228px;
+.list-complicated-container {
+    .list-complicated-container_is_shadow {
+        box-shadow: 0 3px 5px $color_list_shadow, 0 5px 5px $color_list_shadow;
+    }
+}
+
+.list-complicated-container {
+    .list-complicated-container_outer_distance {
+        margin-right: 20px;
+    }
+}
+
+.list-complicated-container {
+    .list-complicated-container_is_inner_distance {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.list-complicated-container {
+    .column-list {
+        width: 200px;
+    }
 }
 
 .list-complicated-container {

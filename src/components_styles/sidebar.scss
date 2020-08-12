@@ -1,6 +1,21 @@
+@import '../common_styles/pallete_sidebar.scss';
+
 .sidebar {
-    box-shadow: 0 3px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22); /*Для тени задать модификатор по БЭМ*/
     padding: 20px;
+}
+
+.sidebar_is_shadow {
+    box-shadow: 0 3px 5px $color_sidebar_shadow, 0 5px 5px $color_sidebar_shadow;
+}
+
+.sidebar .sidebar__title {
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    .sidebar__wrapper-content {
+        margin-bottom: 0;
+    }
 }
 
 .form-requisites {
@@ -29,7 +44,7 @@
     .checkbox-container {
         .checkbox-container__text {
             display: inline-block;
-            margin-left: 33px;
+            margin-left: 28px;
         }
     }
 }
@@ -42,7 +57,7 @@
             left: 0;
             height: 20px;
             width: 20px;
-            border: 1px solid #000;
+            border: 1px solid $color_checkmark;
         }
     }
 }
@@ -65,22 +80,51 @@
     }
 }
 
-.form-requisites {
-    .checkbox-container {
-        .checkbox-container__checkmark:after {
-            top: 4px;
-            left: calc(7px + 1.8%);
-            width: 4px;
-            height: 8px;
-            border: solid #000;
-            border-width: 0 2px 2px 0;
-            transform: rotate(45deg);
-        }
+.form-requisites .checkbox-container_is_length {
+    width: 365px
+}
+
+.checkbox-container {
+    .checkbox-container__checkmark:after {
+        top: 4px;
+        left: calc(7px + 1.8%);
+        width: 4px;
+        height: 8px;
+        border: solid $color_checkmark;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
     }
 }
 
-.form-requisites {
-    .btn-exchange {
-        border-radius: 0;
-    }
+.checkbox-container_is_remove_underline:hover {
+    text-decoration: none;
+}
+
+.checkbox-container_link_colored, .checkbox-container_link_colored:hover {
+    color: $color_checkbox_link;
+}
+
+.form-requisites .btn-exchange_is_radius {
+    border-radius: 0;
+}
+
+.btn-exchange {
+    margin-top: 10px;
+}
+
+.btn-exchange_is_colored, .btn-exchange_is_colored:hover {
+    background: $color_btn-exchange;
+    color: $color_btn-exchange_text;
+}
+
+.btn-exchange_is_size {
+    width: 100%;
+}
+
+.btn-exchange_is_shadow {
+    box-shadow: 3px 8px 3px $color_btn-exchange_shadow, 0 6px 8px 0 $color_btn-exchange_shadow;
+}
+
+.checkbox-container_is_text_size {
+    font-size: 14px;
 }

@@ -1,13 +1,23 @@
+@import '../common_styles/pallete_wrapper.scss';
+
 .wrapper-content {
-    .control {
-        width: 280px;
+    .control_is_length {
+        width: 365px;
+    }
+}
+
+.wrapper-content .control_tall {
+    height: 45px;
+}
+
+.wrapper-content {
+    .control_is_colored {
+        background: $color_control;
     }
 }
 
 .wrapper-content {
-    .control {
-        .control__input {
-            height: 45px;
-        }
+    .control_remove_border {
+        border: none;
     }
 }
