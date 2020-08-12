@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuLeft from './menu_item_left.js';
 import NavbarRight from './navbar-right.js';
-import '../components_styles/menu.scss'
+import '../components_styles/menu.scss';
 
 class Menu extends React.Component {
     constructor() {
@@ -11,7 +11,8 @@ class Menu extends React.Component {
                 {id: 0, link: "Обмен"},
                 {id: 1, link: "Бонусы"},
                 {id: 2, link: "Заработок"},
-                {id: 3, link: "FAQ"}
+                {id: 3, link: "FAQ"},
+                {id: 4, link: 'Связаться с поддержкой'}
             ]
         }
     }
@@ -23,7 +24,7 @@ class Menu extends React.Component {
             <div>
                 <nav className="navbar-container">
                     <div className="navbar-left">
-                        <ul className="menu-left">
+                        <ul className="menu-left menu-left_remove_list-styles">
                             <a className="menu-left__navbar-brand" href="#">NavBar</a>
                             {RENDER_MENU_ITEMS}
                         </ul>

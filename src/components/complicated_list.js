@@ -56,7 +56,13 @@ class ListComplicated extends React.Component {
         })
         return (
             <div>
-                <div className="list-complicated-container">
+                <div 
+                    className="
+                            list-complicated-container 
+                            list-complicated-container_is_shadow 
+                            list-complicated-container_is_inner_distance
+                        "
+                >
                     <div className="part-list-container first-part-list">
                         <ItemTitle header="Отдаете" />
                         <ul className="column-list list-group">

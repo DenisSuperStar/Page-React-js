@@ -16,7 +16,7 @@ class NavbarRight extends React.Component {
             return (
                 <div key={item.id}>
                     <li className="menu-right__list">
-                        <a href="#" className="menu-right__link">{item.link}</a>
+                        <a href="#" className="menu-right__link menu-right_inner-distance">{item.link}</a>
                     </li>  
                 </div>
                 

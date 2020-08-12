@@ -1,6 +1,6 @@
-import React from 'react'
-import WrapperContent from './wrapper-content.js'
-import '../components_styles/sidebar.scss'
+import React from 'react';
+import WrapperContent from './wrapper-content.js';
+import '../components_styles/sidebar.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Sidebar extends React.Component {
@@ -27,7 +27,7 @@ class Sidebar extends React.Component {
         })
         return (
             <div>
-                <div className="sidebar">
+                <div className="sidebar sidebar_is_shadow">
                     <h2 className="sidebar__title">Сумма обмена</h2>
                     <form className="form-crediting">
                         {RENDER_CREDITED}
@@ -36,12 +36,22 @@ class Sidebar extends React.Component {
                     <h2 className="sidebar__wrapper-content">Реквизиты</h2>
                     <form className="form-requisites">
                         {RENDER_REQUISITIES}
-                        <label className="checkbox-container">
-                            <span className="checkbox-container__text">Я согласен c <a href="#" className="checkbox-container__link">условиями и правилами сервиса</a></span>
+                        <label className="checkbox-container checkbox-container_is_length">
+                            <span className="checkbox-container__text">Я согласен c <a href="#" className="checkbox-container__link checkbox-container_is_remove_underline checkbox-container_link_colored">условиями и правилами сервиса</a></span>
                             <input type="checkbox" className="checkbox-container__checkbox" />
                             <span className="checkbox-container__checkmark"></span>
                         </label>
-                        <button type="submit" className="btn btn-lg btn-exchange">Обменять</button>
+                        <button type="submit" 
+                            className="
+                                btn btn-lg 
+                                btn-exchange 
+                                btn-exchange_is_colored 
+                                btn-exchange_is_size 
+                                btn-exchange_is_shadow 
+                                btn-exchange_is_radius"
+                            >
+                                Обменять
+                            </button>
                     </form>
                 </div>
             </div>
