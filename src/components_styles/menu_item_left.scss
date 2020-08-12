@@ -1,7 +1,25 @@
-.menu-left__list .menu-left__link {
-    text-decoration: none;  
+@import '../common_styles/pallete_menu_item_left.scss';
+
+.menu-left__list {
+    .menu-left__link {
+        text-decoration: none;
+    }
 }
 
-.menu-left__list .menu-left_left_distance {
-    padding: 12px; /*Пересчитать!*/
+.menu-left__list {
+    .menu-left_left_distance {
+        padding: 12px;
+    }
+}
+
+.menu-left__list {
+    .menu-left_is_color_link {
+        color: $menu_left_color_link;
+    }
+}
+
+.menu-left__list {
+    .menu-left_is_size_text {
+        font-size: 15px;
+    }
 }

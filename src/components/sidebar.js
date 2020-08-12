@@ -23,17 +23,17 @@ class Sidebar extends React.Component {
             return <WrapperContent text={item.text} prompt={item.help} key={item.id} />
         })
         const RENDER_REQUISITIES = this.state.requisites.map(item => {
-            return <WrapperContent text={item.text} prompt={item.prompt} key={item.id} />
+            return <WrapperContent text={item.text} prompt={item.prompt} id={`component_${item.id + 1}`} key={item.id} />
         })
         return (
             <div>
                 <div className="sidebar sidebar_is_shadow">
-                    <h2 className="sidebar__title">Сумма обмена</h2>
+                    <h2 className="sidebar__title sidebar_is_size_text">Сумма обмена</h2>
                     <form className="form-crediting">
                         {RENDER_CREDITED}
                     </form>
 
-                    <h2 className="sidebar__wrapper-content">Реквизиты</h2>
+                    <h2 className="sidebar__wrapper-content sidebar_wrapper_is_size_text">Реквизиты</h2>
                     <form className="form-requisites">
                         {RENDER_REQUISITIES}
                         <label className="checkbox-container checkbox-container_is_length">

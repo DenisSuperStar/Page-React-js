@@ -64,21 +64,21 @@ class ListComplicated extends React.Component {
                             list-complicated-container_is_inner_distance
                         "
                 >
-                    <div className="part-list-container first-part-list">
+                    <div className="part-list-container part-list-container_first_is_size_text">
                         <ItemTitle header="Отдаете" />
                         <ul className="column-list list-group">
                             {RENDER_SEND_ITEMS}
                         </ul>
                     </div>
 
-                    <div className="part-list-container second-part-list">
+                    <div className="part-list-container part-list-container_second_is_size_text">
                         <ItemTitle header="Получаете" />
                         <ul className="column-list list-group">
                             {RENDER_ACCEPT_ITEMS}
                         </ul>
                     </div>
 
-                    <div className="part-list-container third-part-list">
+                    <div className="part-list-container part-list-container_third_is_size_text">
                         <ItemTitle header="Доступный резерв" />
                         <ul className="column-list list-group">
                             {RENDER_PRICE}

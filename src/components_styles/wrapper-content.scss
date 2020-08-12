@@ -6,6 +6,12 @@
     }
 }
 
+.wrapper-content {
+    .control_is_outer_distance {
+        margin-bottom: 17px;
+    }
+}
+
 .wrapper-content .control_tall {
     height: 45px;
 }
@@ -20,4 +26,8 @@
     .control_remove_border {
         border: none;
     }
+}
+
+#component_3 {
+    margin-bottom: 0;
 }

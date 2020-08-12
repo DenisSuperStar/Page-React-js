@@ -5,11 +5,19 @@
 }
 
 .sidebar_is_shadow {
-    box-shadow: 0 3px 5px $color_sidebar_shadow, 0 5px 5px $color_sidebar_shadow;
+    box-shadow: 0 5px 10px $color_sidebar_shadow;
 }
 
-.sidebar .sidebar__title {
-    margin-bottom: 20px;
+.sidebar {
+    .sidebar__title {
+        margin-bottom: 20px;
+    }
+}
+
+.sidebar {
+    .sidebar_is_size_text, .sidebar_wrapper_is_size_text {
+        font-size: 23px;
+    }
 }
 
 .sidebar {

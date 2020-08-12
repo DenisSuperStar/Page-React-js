@@ -17,9 +17,11 @@ class WrapperContet extends React.Component {
                                     control-tall 
                                     control_is_colored 
                                     control_remove_border
+                                    control_is_outer_distance
                                 " 
                             placeholder={this.props.prompt} 
-                            disabled 
+                            disabled
+                            id={this.props.id} 
                         />
                     </div>
                 </div>

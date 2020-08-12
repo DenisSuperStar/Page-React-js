@@ -7,6 +7,11 @@
 .navbar-right {
     .menu-right {
         display: flex;
+    }
+}
+
+.navbar-right {
+    .menu-right_remove_list_styles {
         list-style-type: none;
     }
 }
@@ -14,7 +19,12 @@
 .menu-right__list {
     .menu-right__link {
         text-decoration: none;
-        
+    }
+}
+
+.menu-right__list {
+    .menu-right_is_color_link {
+        color: #000;
     }
 }
 
@@ -22,4 +32,14 @@
     .menu-right_inner-distance {
         padding: 12px; /*Пересчитать!*/
     }
+}
+
+.menu-right__list {
+    .menu-right_is_size_text {
+        font-size: 14px;
+    }
+}
+
+#link_2 {
+    color: #2979ff;
 }

@@ -6,15 +6,16 @@
 }
 
 .list-complicated-container_is_shadow {
-    box-shadow: 0 3px 5px $color_list_shadow, 0 5px 5px $color_list_shadow;
+    box-shadow: 0 5px 10px $color_list_shadow;
 }
 
 .list-complicated-container_outer_distance {
-    margin-right: 20px;
+    margin-right: 27px;
 }
 
 .list-complicated-container_is_inner_distance {
-    padding-top: 15px;
+    padding-top: 25px;
+    padding-left: 35px;
     padding-bottom: 15px;
 }
 
@@ -24,14 +25,14 @@
     }
 }
 
-.list-complicated-container {
-    .first-part-list {
-        padding-left: 40px;
+.part-list-container_first_is_size_text, .part-list-container_second_is_size_text {
+    .part-list-container__title {
+        font-size: 21px;
     }
 }
 
-.list-complicated-container {
-    .second-part-list {
-        padding-left: 20px;
+.part-list-container_third_is_size_text {
+    .part-list-container__title {
+        font-size: 15px;
     }
 }
