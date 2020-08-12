@@ -59,7 +59,8 @@ class ListComplicated extends React.Component {
                 <div 
                     className="
                             list-complicated-container 
-                            list-complicated-container_is_shadow 
+                            list-complicated-container_is_shadow
+                            list-complicated-container_outer_distance 
                             list-complicated-container_is_inner_distance
                         "
                 >
