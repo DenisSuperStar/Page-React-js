@@ -1,5 +1,6 @@
 import React from 'react'
 import '../components_styles/wrapper-content.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class WrapperContet extends React.Component {
     render() {

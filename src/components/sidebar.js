@@ -33,7 +33,7 @@ class Sidebar extends React.Component {
                         {RENDER_CREDITED}
                     </form>
 
-                    <h2 className="wrapper-content__requisites">Реквизиты</h2>
+                    <h2 className="sidebar__wrapper-content">Реквизиты</h2>
                     <form className="form-requisites">
                         {RENDER_REQUISITIES}
                         <label className="checkbox-container">
