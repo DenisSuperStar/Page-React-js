@@ -48,10 +48,12 @@ class Sidebar extends React.Component {
                                 btn-exchange_is_colored 
                                 btn-exchange_is_size 
                                 btn-exchange_is_shadow 
-                                btn-exchange_is_radius"
-                            >
-                                Обменять
-                            </button>
+                                btn-exchange_is_radius
+                                btn-exchange_is_text_transform
+                            "
+                        >
+                            Обменять
+                        </button>
                     </form>
                 </div>
             </div>
