@@ -21,7 +21,7 @@ class NavbarRight extends React.Component {
                             className="
                                 menu-right__link
                                 menu-right_is_color_link 
-                                menu-right_inner-distance
+                                menu-right_inner_distance
                                 menu-right_is_size_text
                             "
                             id={`link_${item.id + 1}`}

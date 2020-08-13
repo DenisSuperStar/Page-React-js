@@ -1,5 +1,13 @@
 @import '../common_styles/pallete_sidebar.scss';
 
+@mixin checkmark($top, $left, $width, $height, $border) {
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    border: $border;
+}
+
 .sidebar {
     padding: 20px;
 }
@@ -26,79 +34,61 @@
     }
 }
 
-.form-requisites {
-    .checkbox-container {
+.checkbox-container {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.checkbox-container {
+    .checkbox-container__checkbox {
+        position: absolute;
+        opacity: 0;
         cursor: pointer;
-        display: block;
-        position: relative;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        height: 0;
+        width: 0;
     }
 }
 
-.form-requisites {
-    .checkbox-container {
-        .checkbox-container__checkbox {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            height: 0;
-            width: 0;
-        }
+.checkbox-container {
+    .checkbox-container__text {
+        display: inline-block;
+        margin-left: 28px;
     }
 }
 
-.form-requisites {
-    .checkbox-container {
-        .checkbox-container__text {
-            display: inline-block;
-            margin-left: 28px;
-        }
+.checkbox-container {
+    .checkbox-container__checkmark {
+        position: absolute;
+        @include checkmark(0, 0, 20px, 20px, 1px solid $color_checkmark);
     }
-}
-
-.form-requisites {
-    .checkbox-container {
-        .checkbox-container__checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 20px;
-            width: 20px;
-            border: 1px solid $color_checkmark;
-        }
-    }
-}
-
-.form-requisites {
-    .checkbox-container {
-        .checkbox-container__checkmark:after {
-            content: "";
-            position: absolute;
-            display: none;
-        }
-    }
-}
-
-.form-requisites {
-    .checkbox-container {
-        .checkbox-container__checkbox:checked ~ .checkbox-container__checkmark:after {
-            display:block;
-        }
-    }
-}
-
-.form-requisites .checkbox-container_is_length {
-    width: 365px
 }
 
 .checkbox-container {
     .checkbox-container__checkmark:after {
-        top: 4px;
-        left: calc(7px + 1.8%);
-        width: 4px;
-        height: 8px;
-        border: solid $color_checkmark;
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+
+.checkbox-container {
+    .checkbox-container__checkbox:checked ~ .checkbox-container__checkmark:after {
+        display:block;
+    }
+}
+
+
+.checkbox-container_is_length {
+    width: 365px;
+}
+
+.checkbox-container {
+    .checkbox-container__checkmark:after {
+        @include checkmark(4px, calc(7px + 1.8%), 4px, 8px, solid $color_checkmark);
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
     }
@@ -112,7 +102,11 @@
     color: $color_checkbox_link;
 }
 
-.form-requisites .btn-exchange_is_radius {
+.checkbox-container_is_text_size {
+    font-size: 14px;
+}
+
+.btn-exchange_is_radius {
     border-radius: 0;
 }
 
@@ -133,6 +127,6 @@
     box-shadow: 3px 8px 3px $color_btn-exchange_shadow, 0 6px 8px 0 $color_btn-exchange_shadow;
 }
 
-.checkbox-container_is_text_size {
-    font-size: 14px;
+.btn-exchange_is_text_transform {
+    text-transform: uppercase;
 }
