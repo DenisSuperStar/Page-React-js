@@ -1,31 +1,23 @@
 @import '../common_styles/pallete_wrapper.scss';
 
-.wrapper-content {
-    .control_is_length {
-        width: 365px;
-    }
+.control_is_length {
+    width: 365px;
 }
 
-.wrapper-content {
-    .control_is_outer_distance {
-        margin-bottom: 17px;
-    }
+.control_is_outer_distance {
+    margin-bottom: 17px;
 }
 
-.wrapper-content .control_tall {
+.control_tall {
     height: 45px;
 }
 
-.wrapper-content {
-    .control_is_colored {
-        background: $color_control;
-    }
+.control_is_colored {
+    background: $color_control;
 }
 
-.wrapper-content {
-    .control_remove_border {
-        border: none;
-    }
+.control_remove_border {
+    border: none;
 }
 
 #component_3 {

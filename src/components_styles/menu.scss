@@ -9,8 +9,10 @@
     }
 }
 
-.navbar-container .menu-left {
-    display: flex;
+.navbar-container {
+    .menu-left {
+        display: flex;
+    }
 }
 
 .navbar-container {
