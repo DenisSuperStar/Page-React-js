@@ -36,3 +36,20 @@
         font-size: 15px;
     }
 }
+
+//Адаптивность содержимого компонента list
+@media screen and (max-width: 1199px) {
+    .list-complicated-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-complicated-container_is_inner_distance {
+        padding-left: 0; //!!
+    }
+
+    .list-complicated-container_outer_distance {
+        margin-right: 0;
+        margin-bottom: 27px;
+    }
+}
