@@ -27,17 +27,31 @@
 //Адаптивность внутреннего содержимого компонента sidebar
 @media screen and (max-width: 1199px) {
     .wrapper-content {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .wrapper-content {
         .wrapper-content__input-title {
             padding: 7px 7px 7px 0;
         }
     }
+}
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     .control {
         width: 75%;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1199px) {
+    .wrapper-content {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper-content {
+        display: block;
+    }
+
+    .control_is_length {
+        width: 100%;
     }
 }

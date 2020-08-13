@@ -74,13 +74,11 @@
     }
 }
 
-
 .checkbox-container {
     .checkbox-container__checkbox:checked ~ .checkbox-container__checkmark:after {
         display:block;
     }
 }
-
 
 .checkbox-container_is_length {
     width: 365px;

@@ -39,17 +39,41 @@
 
 //Адаптивность содержимого компонента list
 @media screen and (max-width: 1199px) {
+    .list-complicated-container_outer_distance {
+        margin-right: 0;
+        margin-bottom: 27px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1199px) {
     .list-complicated-container {
         display: flex;
         justify-content: center;
     }
 
     .list-complicated-container_is_inner_distance {
-        padding-left: 0; //!!
+        padding-left: 0;
+    }    
+}
+
+@media screen and (max-width: 720px) {
+    .list-complicated-container {
+        display: block;
     }
 
-    .list-complicated-container_outer_distance {
-        margin-right: 0;
-        margin-bottom: 27px;
+    .list-complicated-container_is_inner_distance {
+        padding-left: 60px;
+    }
+
+    .list-complicated-container {
+        .column-list {
+            width: auto;
+        }
+    }
+
+    .part-list-container_first_is_size_text, .part-list-container_second_is_size_text {
+        .part-list-container__title {
+            font-size: 49px;
+        }
     }
 }

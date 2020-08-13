@@ -25,6 +25,13 @@
     }
   }
   
-  /*@media screen and (max-width: 768px) {
-   
-  }*/
+  @media screen and (max-width: 720px) {
+    .main__general-content {
+      display: flex;
+      justify-content: center;
+    }
+
+    .main__general-content > div {
+      width: 100%;
+    }
+  }
