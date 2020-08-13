@@ -17,3 +17,14 @@
   .main > .main__sidebar-content {
     flex: 0 0 20%;
   }
+
+  // Адаптивность сетки
+  @media screen and (max-width: 1199px) {
+    .main {
+      display: block;
+    }
+  }
+  
+  /*@media screen and (max-width: 768px) {
+   
+  }*/
