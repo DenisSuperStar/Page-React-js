@@ -7,10 +7,11 @@ class ItemList extends React.Component {
         return (
             <li 
                 className="
-                    column-list__item 
+                    column-list__item
+                    column-list_is_size_text 
                     list-group-item 
                     list-group__item 
-                    column-list_is_size_text
+                    list-group_is_background
             ">
                 {this.props.name}
             </li>
