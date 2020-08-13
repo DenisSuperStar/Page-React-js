@@ -71,14 +71,24 @@ class ListComplicated extends React.Component {
                         </ul>
                     </div>
 
-                    <div className="part-list-container part-list-container_second_is_size_text">
+                    <div className="
+                            part-list-container 
+                            part-list-container_second_is_size_text
+                            part-list-container_is_outer_dists
+                        "
+                    >
                         <ItemTitle header="Получаете" />
                         <ul className="column-list list-group">
                             {RENDER_ACCEPT_ITEMS}
                         </ul>
                     </div>
 
-                    <div className="part-list-container part-list-container_third_is_size_text">
+                    <div className="
+                            part-list-container 
+                            part-list-container_third_is_size_text
+                            part-list-container_is_outer_dists
+                        "
+                    >
                         <ItemTitle header="Доступный резерв" />
                         <ul className="column-list list-group">
                             {RENDER_PRICE}

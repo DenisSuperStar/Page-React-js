@@ -128,3 +128,33 @@
 .btn-exchange_is_text_transform {
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 720px) {
+    .sidebar {
+        .sidebar_is_size_text, 
+        .sidebar_wrapper_is_size_text {
+            font-size: 49px !important;
+        }
+    }
+
+    .checkbox-container_is_length {
+        width: 100%;
+    }
+
+    .checkbox-container_size_text {
+        font-size: 27px;
+    }
+    
+    .checkbox-container_is_transform_kind {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .btn-exchange_is_size {
+        height: 100px;
+    }
+
+    .btn-exchange_is_text_transform {
+        font-size: 29px;
+    }
+}

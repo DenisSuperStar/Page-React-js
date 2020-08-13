@@ -71,9 +71,15 @@
         }
     }
 
-    .part-list-container_first_is_size_text, .part-list-container_second_is_size_text {
+    .part-list-container_first_is_size_text, 
+    .part-list-container_second_is_size_text, 
+    .part-list-container_third_is_size_text {
         .part-list-container__title {
             font-size: 49px;
         }
+    }
+    
+    .part-list-container_is_outer_dists {
+        margin-top: 57px;
     }
 }

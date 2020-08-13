@@ -51,7 +51,18 @@
         display: block;
     }
 
+    .wrapper-content {
+        .wrapper-content__input-title {
+            font-size: 39px;
+        }
+    }
+
     .control_is_length {
         width: 100%;
+    }
+
+    .control_tall {
+        font-size: 32px;
+        height: 80px;
     }
 }

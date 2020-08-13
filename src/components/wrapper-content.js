@@ -14,7 +14,7 @@ class WrapperContet extends React.Component {
                             className="
                                     control__input 
                                     form-control 
-                                    control-tall 
+                                    control_tall 
                                     control_is_colored 
                                     control_remove_border
                                     control_is_outer_distance
