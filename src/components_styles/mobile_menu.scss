@@ -1,0 +1,150 @@
+    @import '../common_styles/pallete_mobile_menu.scss';
+    
+    @mixin sizes($width, $height) {
+        width: $width;
+        height: $height;
+    }
+
+    /*@mixin location($pos, $up, $left) {
+        position: $pos;
+        top: $up;
+        left: $left;
+    }*/
+
+    @mixin pseudo-location($content, $up) {
+        content: $content;
+        top: $up;
+    }
+
+    @mixin rotation-transpos($up, $roll) {
+        top: $up;
+        transform: $roll;
+    }
+    
+    .humburger-menu__toggle {
+        opacity: 0;
+    }
+
+    .humburger-menu__btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .humburger-menu_sizes {
+        @include sizes(26px, 26px);
+    }
+
+    .humburger-menu_moved {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        z-index: 2;
+    }
+
+    .humburger-menu__btn > span,
+    .humburger-menu__btn span::before,
+    .humburger-menu__btn span::after {
+        display: block;
+    }
+
+    .humburger-menu_moved > span,
+    .humburger-menu_moved > span::before,
+    .humburger-menu_moved > span::after {
+        position: absolute;
+    }
+
+    .humburger-menu_sizes > span,
+    .humburger-menu_sizes > span::before,
+    .humburger-menu_sizes > span::after {
+        @include sizes(100%, 2px);
+    }
+
+    .humburger-menu_colored > span,
+    .humburger-menu_colored > span::before,
+    .humburger-menu_colored > span::after {
+        background-color: $color_humburger_menu;
+    }
+
+    .humburger-menu__btn > span::before {
+        @include pseudo-location('', -8px);
+    }
+
+    .humburger-menu__btn > span::after {
+        @include pseudo-location('', 8px);
+    }
+
+      .menu-box {
+        display: block;
+        visibility: hidden;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+      }
+
+      .menu-box_moved {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+      }
+
+      .menu-box_sizes {
+        @include sizes(300px, 100%);
+      }
+
+      .menu-box_outer_dists {
+        padding: 80px 0;
+      }
+
+      .menu-box_colored_shadow {
+        background-color: $color_background;
+        box-shadow: 1px 0px 6px $color_shadow;
+      }
+
+      .menu-box__item-list {
+          .menu-box__item-link {
+              display: block;
+              text-decoration: none;
+          }
+      }
+
+      .menu-box__item-list {
+          .menu-box_link_sizes {
+              font-size: 20px;
+          }
+      }
+
+      .menu-box__item-list {
+          .menu-box_link_colored {
+              color: $color_link;
+          }
+      }
+
+      .menu-box__item-list {
+          .menu-box_link_colored:hover {
+            background-color: $color_item_link;
+          }
+      }
+
+      #menu__toggle:checked ~ .humburger-menu__btn > span {
+        transform: rotate(45deg);
+      }
+
+      #menu__toggle:checked ~ .humburger-menu__btn > span::before {
+        @include rotation-transpos(0, rotate(0));
+      }
+
+      #menu__toggle:checked ~ .humburger-menu__btn > span::after {
+        @include rotation-transpos(0, rotate(90deg));
+      }
+
+      #menu__toggle:checked ~ .menu-box {
+        visibility: visible;
+        right: 0;
+      }
+
+      @media screen and (max-width: 720px) {
+          .humburger-menu_moved {
+              margin-right: 15px;
+          }
+      }
