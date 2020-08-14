@@ -8,13 +8,13 @@ class WrapperContet extends React.Component {
             <div>
                 <div className="wrapper-content">
                     <label className="wrapper-content__input-title">{this.props.text}</label>
-                    <div className="input-group control control_is_length">
+                    <div className="input-group control control_input-group">
                         <input 
                             type="text" 
                             className="
                                     control__input 
                                     form-control 
-                                    control_tall 
+                                    control_input-size 
                                     control_is_colored 
                                     control_remove_border
                                     control_is_outer_distance
