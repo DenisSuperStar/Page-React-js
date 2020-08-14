@@ -1,22 +1,19 @@
-.navbar-container {
-    display: flex;
-}
-
-.navbar-container {
-    .navbar-left {
+@media screen and (min-width: 992px) {
+    #menu__shown {
         display: flex;
-        align-items: center;
+    }
+
+    #menu__hidden {
+        display: none;
     }
 }
 
-.navbar-container {
-    .menu-left {
-        display: flex;
+@media screen and (max-width: 991px) {
+    #menu__shown {
+        display: none;
     }
-}
 
-.navbar-container {
-    .menu-left_remove_list-styles {
-        list-style-type: none;
+    #menu__hidden {
+        display: block;
     }
 }
