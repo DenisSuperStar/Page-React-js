@@ -61,10 +61,6 @@
         display: block;
     }
 
-    .list-complicated-container_is_inner_distance {
-        padding-left: 60px;
-    }
-
     .list-complicated-container {
         .column-list {
             width: auto;
@@ -75,11 +71,23 @@
     .part-list-container_second_is_size_text, 
     .part-list-container_third_is_size_text {
         .part-list-container__title {
-            font-size: 49px;
+            font-size: 25px;
         }
     }
     
     .part-list-container_is_outer_dists {
-        margin-top: 57px;
+        margin-top: 27px; 
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 720px) {
+    .list-complicated-container_is_inner_distance {
+        padding-left: 21px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .list-complicated-container_is_inner_distance {
+        padding-left: 21px;
     }
 }

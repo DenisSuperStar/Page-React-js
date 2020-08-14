@@ -1,6 +1,6 @@
 @import '../common_styles/pallete_wrapper.scss';
 
-.control_is_length {
+.control_input-group {
     width: 365px;
 }
 
@@ -8,7 +8,7 @@
     margin-bottom: 17px !important;
 }
 
-.control_tall {
+.control_input-size {
     height: 45px;
 }
 
@@ -53,16 +53,16 @@
 
     .wrapper-content {
         .wrapper-content__input-title {
-            font-size: 39px;
+            font-size: 16px;
         }
     }
 
-    .control_is_length {
+    .control_input-group {
         width: 100%;
     }
 
-    .control_tall {
-        font-size: 32px;
+    .control_input-size {
+        font-size: 15px;
         height: 80px;
     }
 }
