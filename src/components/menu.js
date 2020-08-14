@@ -10,7 +10,9 @@ class Menu extends React.Component {
         return (
             <div>
                 <nav className="navbar-container">
+                    <div>
                     <a className="navbar-brand" href="#">Navbar</a>
+                    </div>
                     <div id="menu__shown">
                         <NavbarLeft />
                         <NavbarRight />

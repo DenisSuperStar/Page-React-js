@@ -1,3 +1,5 @@
+@import '../common_styles/pallete_navbar_right.scss';
+
 .navbar-right {
     margin-left: auto;
     display: flex;
@@ -41,5 +43,6 @@
 }
 
 #link_2 {
-    color: #2979ff;
+    color: $color_link;
 }
+

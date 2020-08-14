@@ -1,6 +1,29 @@
+@media screen and (min-width: 1200px) {
+    .navbar-container {
+        #menu__shown {
+            margin-left: 7.82rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #menu__shown {
+        .navbar-left {
+            margin-left: auto;
+        }
+    }
+}
+
 @media screen and (min-width: 992px) {
+    .navbar-container {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+
     #menu__shown {
         display: flex;
+        width: 100%;
     }
 
     #menu__hidden {

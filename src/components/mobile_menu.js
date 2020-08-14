@@ -10,7 +10,9 @@ class MobileMenu extends React.Component {
                 {id: 1, link: 'Бонусы'},
                 {id: 2, link: 'Заработок'},
                 {id: 3, link: 'FAQ'},
-                {id: 4, link: 'Связаться с поддержкой'}
+                {id: 4, link: 'Связаться с поддержкой'},
+                {id: 5, link: 'Войти'},
+                {id: 6, link: 'Создать аккаунт'}
             ]
         }
     }
@@ -45,7 +47,6 @@ class MobileMenu extends React.Component {
                         htmlFor="menu__toggle">
                         <span></span>
                     </label>
-                    
                     <ul 
                         className="
                             menu-box 
