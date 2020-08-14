@@ -1,0 +1,33 @@
+@import '../common_styles/pallete_navbar_left.scss';
+
+.menu-left {
+    display: flex;
+}
+
+.menu-left__list {
+    list-style-type: none;
+}
+
+.menu-left__list {
+    .menu-left__link {
+        text-decoration: none;
+    }
+}
+
+.menu-left__list {
+    .menu-left_outer {
+        padding: 12px;
+    }
+}
+
+.menu-left__list {
+    .menu-left_color_link {
+        color: $menu_left_color_link;
+    }
+}
+
+.menu-left__list {
+    .menu-left_size_text {
+        font-size: 15px;
+    }
+}
