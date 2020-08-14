@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../components_styles/item_list.scss'
+import '../components_styles/item_list.scss';
 
 class ItemList extends React.Component {
     render() {
