@@ -13,7 +13,11 @@ class ItemList extends React.Component {
                     list-group__item 
                     list-group_is_background
             ">
-                {this.props.name}
+                <div className="column-list__item-inner-link">
+                    <div className="column-list__circle"></div>
+                    <div className="column-list__text">{this.props.name}</div>
+                    <div className="column-list__checked_circle"></div>
+                </div>
             </li>
         )
     }

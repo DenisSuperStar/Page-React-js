@@ -59,13 +59,11 @@ class ListComplicated extends React.Component {
                 <div 
                     className="
                             list-complicated-container 
-                            list-complicated-container_is_shadow
-                            list-complicated-container_outer_distance 
-                            list-complicated-container_is_inner_distance
+                            list-complicated-container_shadow
                         "
                 >
-                    <div className="part-list-container part-list-container_first_is_size_text">
-                        <ItemTitle header="Отдаете" />
+                    <div className="part-list-container" id="first">
+                        <ItemTitle header="Отдаете" id="first-header" />
                         <ul className="column-list list-group">
                             {RENDER_SEND_ITEMS}
                         </ul>
@@ -73,23 +71,25 @@ class ListComplicated extends React.Component {
 
                     <div className="
                             part-list-container 
-                            part-list-container_second_is_size_text
                             part-list-container_is_outer_dists
+                            part-list-container_top-dist
                         "
+                        id="second"
                     >
-                        <ItemTitle header="Получаете" />
+                        <ItemTitle header="Получаете" id="second-header" />
                         <ul className="column-list list-group">
                             {RENDER_ACCEPT_ITEMS}
                         </ul>
                     </div>
 
                     <div className="
-                            part-list-container 
-                            part-list-container_third_is_size_text
+                            part-list-container
                             part-list-container_is_outer_dists
+                            part-list-container_top-dist
                         "
+                        id="third"
                     >
-                        <ItemTitle header="Доступный резерв" />
+                        <ItemTitle header="Доступный резерв" id="third-header" />
                         <ul className="column-list list-group">
                             {RENDER_PRICE}
                         </ul>

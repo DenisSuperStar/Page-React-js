@@ -2,44 +2,32 @@
 
 .list-complicated-container {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    margin-right: 27px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 15px;    
 }
 
-.list-complicated-container_is_shadow {
+.list-complicated-container_shadow {
     box-shadow: 0 5px 10px $color_list_shadow;
 }
 
-.list-complicated-container_outer_distance {
-    margin-right: 27px;
-}
-
-.list-complicated-container_is_inner_distance {
-    padding-top: 25px;
-    padding-left: 35px;
-    padding-bottom: 15px;
-}
-
-.list-complicated-container {
+#first, #second {
     .column-list {
-        width: 200px;
+        width: 230px;
     }
 }
 
-.part-list-container_first_is_size_text, .part-list-container_second_is_size_text {
-    .part-list-container__title {
-        font-size: 21px;
-    }
-}
-
-.part-list-container_third_is_size_text {
-    .part-list-container__title {
-        font-size: 15px;
+#third {
+    .column-list {
+        width: 195px;
     }
 }
 
 //Адаптивность содержимого компонента list
 @media screen and (max-width: 1199px) {
-    .list-complicated-container_outer_distance {
+    .list-complicated-container {
         margin-right: 0;
         margin-bottom: 27px;
     }
@@ -49,11 +37,8 @@
     .list-complicated-container {
         display: flex;
         justify-content: center;
-    }
-
-    .list-complicated-container_is_inner_distance {
         padding-left: 0;
-    }    
+    } 
 }
 
 @media screen and (max-width: 720px) {
@@ -67,27 +52,13 @@
         }
     }
 
-    .part-list-container_first_is_size_text, 
-    .part-list-container_second_is_size_text, 
-    .part-list-container_third_is_size_text {
-        .part-list-container__title {
-            font-size: 25px;
-        }
-    }
-    
-    .part-list-container_is_outer_dists {
-        margin-top: 27px; 
+    .part-list-container_top-dist {
+        margin-top: 27px;
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 720px) {
-    .list-complicated-container_is_inner_distance {
-        padding-left: 21px;
-    }
-}
-
-@media screen and (max-width: 359px) {
-    .list-complicated-container_is_inner_distance {
+@media screen and (max-width: 720px) {
+    .list-complicated-container {
         padding-left: 21px;
     }
 }

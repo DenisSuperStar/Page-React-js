@@ -1,0 +1,16 @@
+#first-header__title,
+#second-header__title {
+    font-size: 21px;
+}
+
+#third-header__title {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 720px) {
+    #first-header__title,
+    #second-header__title,
+    #third-header__title {
+        font-size: 25px;
+    }
+}
