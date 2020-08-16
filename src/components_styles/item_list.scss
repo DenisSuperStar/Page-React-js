@@ -1,9 +1,11 @@
+@import '../common_styles/pallete_item_list.scss';
+
 .list-group__item {
     border: none;
 }
 
 .list-group_is_background:hover {
-    background: #e9ecef;
+    background: $color-group;
 }
 
 .column-list_is_size_text {
@@ -26,15 +28,67 @@
     height: 30px;
 }
 
+#fa-bitcoin, #fa-bitcash {
+    img {
+        display: none;
+    }
+}
+
+.fa-general {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 22px;
+}
+
+#fa-bitcoin {
+    @extend .fa-general;
+    color: $color-btc;
+}
+
+#fa-bitcash {
+    @extend .fa-general;
+    color: $color-bch;
+}
+
+.fa-pseudo {
+    content: "\f379";
+    position: absolute;
+    top: 10.5px;
+    left: 0;
+    margin-left: 23.5px;
+}
+
+#fa-bitcoin::before {
+    @extend .fa-pseudo;
+}
+
+#fa-bitcash::before {
+    @extend .fa-pseudo;
+    transform: rotate(-30deg);
+}
+
 .column-list__circle {
     @extend .state-circle;
-    background: #e9e9e9;
+    text-align: center;
+    border: 2px solid $color_circle;
+    background: $color_background_circle;
 }
 
 .column-list__checked_circle {
     @extend .state-circle;
-    background: #4040ff;
+    background: $color_checked_circle;
     display: none; //for adding and removing a class
+}
+
+#third-1,
+#third-2,
+#third-3,
+#third-4,
+#third-5,
+#third-6,
+#third-7,
+#third-8,
+#third-9 {
+    visibility: hidden !important;
 }
 
 @media screen and (max-width: 720px) {

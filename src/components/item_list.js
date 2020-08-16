@@ -14,7 +14,9 @@ class ItemList extends React.Component {
                     list-group_is_background
             ">
                 <div className="column-list__item-inner-link">
-                    <div className="column-list__circle"></div>
+                    <div className="column-list__circle" id={this.props.id}>
+                        <img src={this.props.icon} />
+                    </div>
                     <div className="column-list__text">{this.props.name}</div>
                     <div className="column-list__checked_circle"></div>
                 </div>
@@ -23,6 +25,6 @@ class ItemList extends React.Component {
     }
 }
 
-ItemList.defaultProps = {name: ''};
+ItemList.defaultProps = {name: '', icon: ''};
 
 export default ItemList;

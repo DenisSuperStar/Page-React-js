@@ -3,33 +3,41 @@ import ItemList from '../components/item_list.js';
 import ItemTitle from '../components/list_title.js';
 import '../components_styles/complicated_list.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import qiwi from '../assets/icons/kiwi.png';
+import privat from '../assets/icons/privat24.png';
+import yandex from '../assets/icons/yandex.png';
+import vis_master from '../assets/icons/visa_mastercard.png';
+import oschad from '../assets/icons/ukbank.png';
+import mono from '../assets/icons/monobank.png';
+import pumb from '../assets/icons/pumb.png';
+import raiffeisen from '../assets/icons/raiffeisen.png'
 
 class ListComplicated extends React.Component {
     constructor() {
         super();
         this.state = {
             send: [
-                {id: 0, name: 'QIWI RUB'},
-                {id: 1, name: 'Приват 24UAH'},
-                {id: 2, name: 'Яндекс Деньги'},
-                {id: 3, name: 'Visa/MasterCard UAH'},
-                {id: 4, name: 'Ощадбанк'},
-                {id: 5, name: 'Монобанк'},
-                {id: 6, name: 'ПУМБ'},
-                {id: 7, name: 'Райфайззен UAH'},
-                {id: 8, name: 'Bitcoin (BTC)'},
-                {id: 9, name: 'Bitcoin Cash (BCH)'}
+                {id: 0, name: 'QIWI RUB', icon: qiwi, iname: 'qiwi'},
+                {id: 1, name: 'Приват 24UAH', icon: privat, iname: 'privat'},
+                {id: 2, name: 'Яндекс Деньги', icon: yandex, iname: 'yandex'},
+                {id: 3, name: 'Visa/MasterCard UAH', icon: vis_master, iname: 'vis_master'},
+                {id: 4, name: 'Ощадбанк', icon: oschad, iname: 'oschad'},
+                {id: 5, name: 'Монобанк', icon: mono, iname: 'mono'},
+                {id: 6, name: 'ПУМБ', icon: pumb, iname: 'pumb'},
+                {id: 7, name: 'Райфайззен UAH', icon: raiffeisen, iname: 'raiffeisen'},
+                {id: 8, name: 'Bitcoin (BTC)', iname: 'bitcoin'},
+                {id: 9, name: 'Bitcoin Cash (BCH)', iname: 'bitcash'}
             ],
             accept: [
-                {id: 0, name: 'Приват 24UAH'},
-                {id: 1, name: 'Яндекс Деньги'},
-                {id: 2, name: 'Visa/MasterCard UAH'},
-                {id: 3, name: 'Ощадбанк'},
-                {id: 4, name: 'Монобанк'},
-                {id: 5, name: 'ПУМБ'},
-                {id: 6, name: 'Райфайззен UAH'},
-                {id: 7, name: 'Bitcoin (BTC)'},
-                {id: 8, name: 'Bitcoin Cash (BCH)'}
+                {id: 0, name: 'Приват 24UAH', icon: privat, iname: 'privat'},
+                {id: 1, name: 'Яндекс Деньги', icon: yandex, iname: 'yandex'},
+                {id: 2, name: 'Visa/MasterCard UAH', icon: vis_master, iname: 'vis_master'},
+                {id: 3, name: 'Ощадбанк', icon: oschad, iname: 'oschad'},
+                {id: 4, name: 'Монобанк', icon: mono, iname: 'mono'},
+                {id: 5, name: 'ПУМБ', icon: pumb, iname: 'pumb'},
+                {id: 6, name: 'Райфайззен UAH', icon: raiffeisen, iname: 'raiffeisen'},
+                {id: 7, name: 'Bitcoin (BTC)', iname: 'bitcoin'},
+                {id: 8, name: 'Bitcoin Cash (BCH)', iname: 'bitcash'}
             ],
             price: [
                 {id: 0, price: '185 955.00'},
@@ -46,13 +54,18 @@ class ListComplicated extends React.Component {
     }
     render () {
         const RENDER_SEND_ITEMS = this.state.send.map(item => {
-            return <ItemList name={item.name} key={item.id} />
+            return <ItemList 
+                name={item.name} 
+                key={item.id} 
+                icon={item.icon} 
+                id={`fa-${item.iname}`} 
+            />
         })
         const RENDER_ACCEPT_ITEMS = this.state.accept.map(item => {
-            return <ItemList name={item.name} key={item.id} />
+            return <ItemList name={item.name} key={item.id} icon={item.icon} id={`fa-${item.iname}`} />
         })
         const RENDER_PRICE = this.state.price.map(coin => {
-            return <ItemList name={coin.price} key={coin.id} />
+            return <ItemList name={coin.price} key={coin.id} id={`third-${coin.id + 1}`} />
         })
         return (
             <div>

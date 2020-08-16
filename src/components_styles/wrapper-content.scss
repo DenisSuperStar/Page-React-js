@@ -5,11 +5,11 @@
 }
 
 .control_is_outer_distance {
-    margin-bottom: 17px !important;
+    margin-bottom: 20px !important;
 }
 
 .control_input-size {
-    height: 45px;
+    height: 44px;
 }
 
 .control_is_colored {
@@ -20,8 +20,56 @@
     border: none;
 }
 
+.control__icon {
+    order: -1;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin-top: 10.5px;
+    margin-right: 15px;
+}
+
+.control__input {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.control__icon + .control__input {
+    order: -2;
+    z-index: -1;
+}
+
+.control_img_sizes {
+    width: 20px;
+    height: 20px;
+}
+
+#control__input1,
+#control__input2,
+#control__input3 {
+    right: auto;
+    margin-left: 10.5px;
+    width: 23px;
+    height: 25px;
+}
+
+.outer {
+    padding-left: 43px;
+}
+
+#component_1 {
+    @extend .outer;
+}
+
+#component_2 {
+    @extend .outer;
+}
+
 #component_3 {
     margin-bottom: 0 !important;
+    @extend .outer;
 }
 
 //Адаптивность внутреннего содержимого компонента sidebar
@@ -64,5 +112,50 @@
     .control_input-size {
         font-size: 15px;
         height: 80px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .column-list__item-inner-link {
+        img {
+            position: absolute;
+            left: 0;
+            margin-top: 4px;
+            margin-left: 25px;
+        }
+    }
+    .control__icon {
+        margin-top: 23px;
+        margin-right: 30px;
+    }
+
+    .control_img_sizes {
+        width: 30px;
+        height: 30px;
+    }
+
+    .columns {
+        width: 290px;
+    }
+
+    #first {
+        .column-list {
+           @extend .columns;
+        }
+    }
+
+    #second {
+        .column-list {
+            @extend .columns;
+        }
+    }
+
+    #control__input1,
+    #control__input2 {
+        margin-top: 27px;
+    }
+
+    #control__input3 {
+        margin-top: 30px;
     }
 }

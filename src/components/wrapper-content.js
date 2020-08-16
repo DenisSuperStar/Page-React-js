@@ -9,6 +9,9 @@ class WrapperContet extends React.Component {
                 <div className="wrapper-content">
                     <label className="wrapper-content__input-title">{this.props.text}</label>
                     <div className="input-group control control_input-group">
+                        
+                        <img src={this.props.icon} className="control__icon control_img_sizes" id={this.props.imgid} />
+                        
                         <input 
                             type="text" 
                             className="
@@ -23,11 +26,14 @@ class WrapperContet extends React.Component {
                             disabled
                             id={this.props.id} 
                         />
+                        <div class="my_icon"></div>
                     </div>
                 </div>
             </div>
         )
     }
 }
+
+WrapperContet.defaultProps = {icon: ''};
 
 export default WrapperContet;
