@@ -198,6 +198,20 @@
           }
       }
 
+      @media screen and (min-width: 721px) and (max-width: 991px) {
+          #menu__toggle {
+              .humburger-menu__btn {
+                  z-index: 4;
+              }
+          }
+
+          #menu__toggle {
+              .menu-box {
+                  z-index: 2;
+              }
+          }
+      }
+
       @media screen and (max-width: 992px) {
           .menu-box__item-list {
               text-align: left;

@@ -46,3 +46,8 @@
     color: $color_link;
 }
 
+@media screen and (min-width: 993px) and (max-width: 1139px) {
+    .menu-right {
+        padding-left: 0;
+    }
+}
