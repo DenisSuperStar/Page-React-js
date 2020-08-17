@@ -1,6 +1,7 @@
 import React from 'react';
 import '../components_styles/wrapper-content.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PropTypes from 'prop-types';
 
 class WrapperContet extends React.Component {
     render() {
@@ -10,7 +11,7 @@ class WrapperContet extends React.Component {
                     <label className="wrapper-content__input-title">{this.props.text}</label>
                     <div className="input-group control control_input-group">
                         
-                        <img src={this.props.icon} className="control__icon control_img_sizes" id={this.props.imgid} />
+                        <img src={this.props.icon} className="control__icon control_img_sizes" id={this.props.imgid} alt={this.props.prompt} />
                         
                         <input 
                             type="text" 
@@ -26,7 +27,6 @@ class WrapperContet extends React.Component {
                             disabled
                             id={this.props.id} 
                         />
-                        <div class="my_icon"></div>
                     </div>
                 </div>
             </div>
@@ -34,6 +34,14 @@ class WrapperContet extends React.Component {
     }
 }
 
-WrapperContet.defaultProps = {icon: ''};
+WrapperContet.propTypes = {
+    text: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    imgid: PropTypes.string.isRequired,
+    prompt: PropTypes.string,
+    id: PropTypes.string.isRequired
+}
+
+WrapperContet.defaultProps = {icon: '', imgid: '', id: ''};
 
 export default WrapperContet;

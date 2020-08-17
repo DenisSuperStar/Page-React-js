@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components_styles/item_list.scss';
+import PropTypes from 'prop-types';
 
 class ItemList extends React.Component {
     render() {
@@ -15,7 +16,7 @@ class ItemList extends React.Component {
             ">
                 <div className="column-list__item-inner-link">
                     <div className="column-list__circle" id={this.props.id}>
-                        <img src={this.props.icon} />
+                        <img src={this.props.icon} alt={this.props.name} />
                     </div>
                     <div className="column-list__text">{this.props.name}</div>
                     <div className="column-list__checked_circle"></div>
@@ -23,6 +24,12 @@ class ItemList extends React.Component {
             </li>
         )
     }
+}
+
+ItemList.propTypes = {
+    id: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired
 }
 
 ItemList.defaultProps = {name: '', icon: ''};

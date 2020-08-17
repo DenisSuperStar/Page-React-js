@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components_styles/list_title.scss'
+import '../components_styles/list_title.scss';
 
 class ItemTitle extends React.Component {
     render() {

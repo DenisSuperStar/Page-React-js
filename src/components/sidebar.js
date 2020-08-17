@@ -53,7 +53,7 @@ class Sidebar extends React.Component {
                     <form className="form-requisites">
                         {RENDER_REQUISITIES}
                         <label className="checkbox-container checkbox-container_is_length">
-                            <span className="checkbox-container__text checkbox-container_size_text">Я согласен c <a href="#" className="checkbox-container__link checkbox-container_is_remove_underline checkbox-container_link_colored">условиями и правилами сервиса</a></span>
+                            <span className="checkbox-container__text checkbox-container_size_text">Я согласен c <a href="https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md" className="checkbox-container__link checkbox-container_is_remove_underline checkbox-container_link_colored">условиями и правилами сервиса</a></span>
                             <input type="checkbox" className="checkbox-container__checkbox" />
                             <span className="checkbox-container__checkmark checkbox-container_is_transform_kind"></span>
                         </label>

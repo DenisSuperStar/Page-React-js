@@ -17,7 +17,7 @@ class NavbarRight extends React.Component {
                 <div key={item.id}>
                     <li className="menu-right__list">
                         <a 
-                            href="#" 
+                            href="https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md" 
                             className="
                                 menu-right__link
                                 menu-right_is_color_link 
