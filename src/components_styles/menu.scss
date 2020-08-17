@@ -1,7 +1,13 @@
+#menu__shown {
+    .navbar-left {
+        padding-top: 12px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .navbar-container {
         #menu__shown {
-            margin-left: 7.82rem;
+            margin-left: 6rem;
         }
     }
 }

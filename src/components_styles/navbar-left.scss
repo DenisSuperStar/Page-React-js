@@ -31,3 +31,42 @@
         font-size: 15px;
     }
 }
+
+.menu-left_scale {
+    width: 22px;
+    height: 22px;
+}
+
+.invisible {
+    display: none;
+}
+
+#Exchange {
+    @extend .invisible;
+}
+
+#Bonuses {
+    @extend .invisible;
+}
+
+#Income {
+    @extend .invisible;
+}
+
+#Support {
+    @extend .invisible;
+}
+
+#FAQ {
+    margin-left: 32px;
+}
+
+#Support__list {
+    margin-left: -4px;
+}
+
+#Support__list {
+    .menu-left__link {
+        padding-left: 0;
+    }
+}

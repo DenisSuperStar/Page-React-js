@@ -86,7 +86,7 @@
 
 .checkbox-container {
     .checkbox-container__checkmark:after {
-        @include checkmark(4px, calc(7px + 1.8%), 4px, 8px, solid $color_checkmark);
+        @include checkmark(4px, calc(7px + 1.8%), 4px, 8px, solid $color_checkmark); //!!
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
     }
